@@ -1,0 +1,24 @@
+{
+  "name": "musicapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.6",
+    "mysql": "^2.17.1",
+    "pac-proxy-agent": "^3.0.1",
+    "querystring": "^0.2.0",
+    "request": "^2.88.0",
+    "zlib": "^1.0.5"
+  }
+}
