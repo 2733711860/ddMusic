@@ -5,7 +5,7 @@
 > vue
 
 ```
-git clone https://github.com/2733711860/ddMusic.git  //下载 mmPlayer
+git clone https://github.com/2733711860/ddMusic.git  //下载 ddPlayer
 
 cd dd_music_vue // 进入 ddPlayer 播放器vue项目目录
 
