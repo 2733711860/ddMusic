@@ -5,9 +5,9 @@
 > vue
 
 ```
-git clone https://github.com/maomao1996/Vue-mmPlayer.git  //下载 mmPlayer
+git clone https://github.com/2733711860/ddMusic.git  //下载 mmPlayer
 
-cd Vue-mmPlayer // 进入 mmPlayer 播放器目录
+cd dd_music_vue // 进入 ddPlayer 播放器vue项目目录
 
 cnpm install // 安装依赖
 
@@ -17,7 +17,7 @@ npm run dev // 运行 ddPlayer
 > node
 
 ```
-cd Vue-mmPlayer // 进入 ddPlayer node后台目录
+cd dd_music_node // 进入 ddPlayer node后台目录
 
 cnpm install // 安装依赖
 
