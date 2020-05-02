@@ -3,7 +3,10 @@
 		<div class="rank_top">
 			<div class="rank_title">排行榜单</div>
 			<div class="rank_type">
-				<span v-for="item in typeList" :class="[{choosing: item.rankCode==chooseRankCode}]" :title="item.rankName" @click="findRank(item.rankCode)">{{item.rankName}}</span>
+				<span v-for="item in typeList"
+					:class="[{choosing: item.rankCode==chooseRankCode}]"
+					:title="item.rankName"
+					@click="findRank(item.rankCode)">{{item.rankName}}</span>
 			</div>
 		</div>
 		<dd-list :list="list"></dd-list>
@@ -45,13 +48,10 @@ export default {
 		},
 		
 		async findRank(rankCode) { // 具体排行榜
-			this.chooseRankCode = rankCode
+      		this.chooseRankCode = rankCode
 			let param = { idx: rankCode }
-			let {data} = await http.get({
-	      api: apis.rank_topList,
-	      param
-	    }) || ''
-	    this.list = await formatTopSongs(data.body.playlist.tracks)
+			let {data} = await http.get({api: apis.rank_topList, param}) || ''
+	    	this.list = await formatTopSongs(data.body.playlist.tracks)
 		}
 	}
 }
@@ -65,7 +65,7 @@ export default {
 		flex-flow: column;
 		width: 100%;
 		.list-page{
-			height: 65%;
+			margin-bottom: 2.7rem;
 		}
 		.rank_top{
 			.rank_title{
@@ -77,12 +77,14 @@ export default {
 				/*background: @dd_bg_mask;*/
 				flex: 1;
 				box-shadow: 1px 3px 10px @dd_bg_mask;
-				height: 5.5rem;
+				// height: 5.5rem;
 				span{
 					display: inline-block;
 					padding: .1rem .2rem;
 					margin: .15rem;
-					border: 1px solid hsla(0,0%,100%,.6);
+					border-width:1px;
+					border-style: solid;
+					border-color: hsla(0,0%,100%,.6);
 					border-radius: .1rem;
 					cursor: pointer;
 				}
