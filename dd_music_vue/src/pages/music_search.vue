@@ -66,6 +66,10 @@ export default {
 	display: flex;
 	flex-flow: column;
 	height: 100%;
+	width: 100%;
+	.list-page{
+		height: 95%;
+	}
 }
 .search_inp{
 	border: none;

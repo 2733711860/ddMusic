@@ -83,6 +83,9 @@ export default {
 		padding: .4rem;
 		display: flex;
 		justify-content: space-between;
+		position: fixed;
+		width: 100%;
+		box-sizing: border-box;
 		.title{
 			font-size: @font_size_18;
 			color: inherit;

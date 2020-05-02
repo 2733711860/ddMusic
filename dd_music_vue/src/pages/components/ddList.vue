@@ -1,5 +1,5 @@
 <template>
-	<div class="listPage">
+	<div class="list-page">
 		<div class="list_top">
 			<div class="list_index"></div>
 			<div class="list_song">歌曲</div>
@@ -10,7 +10,7 @@
 			<div class="list_item" v-for="(item, index) in list">
 				<div class="list_index">{{index + 1}}</div>
 				<div class="list_song">
-					<div class="play_name">
+					<div class="play_name ell">
 						{{item.name}}
 						<div class="loading" v-show="currentMusic.id == item.id">
 							<dd-loading></dd-loading>
@@ -22,7 +22,7 @@
 						<img src="../../../static/img/delete.png" title="删除" @click="deletOne(index)" v-show="$route.name=='music_history'" />
 					</div>
 				</div>
-				<div class="list_singer">{{item.singer}}</div>
+				<div class="list_singer ell">{{item.singer}}</div>
 				<div class="list_time">{{ (item.duration % 3600) | format }}</div>
 			</div>
 			<div v-show="$route.name=='music_history' && list.length>0" class="cleaall" @click="clearAll">清空播放历史</div>
@@ -177,7 +177,7 @@ export default {
 
 <style scoped="scoped" lang="less">
 @import url("../../styles/index.less");
-.listPage{
+.list-page{
 	height: 100%;
 	display: flex;
 	flex-flow: column;
@@ -208,14 +208,14 @@ export default {
 	}
 }
 .list_index{
-	width: 5%;
+	width: 9%;
 }
 .list_song{
-	width: 55%;
+	width: 50%;
 	display: flex;
 	.play_name{
 		flex: 1;
-		display: flex;
+		// display: flex;
 		.loading{
 			height: auto;
 			width: .5rem;

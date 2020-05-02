@@ -13,7 +13,10 @@
 			</div>
     </div>
 
-		<div :class="{ disable: !currentMusic.id }" style="padding: 0 .4rem;">
+		<div :class="{ disable: !currentMusic.id }" style="padding: 0 .4rem;
+      position: fixed;box-sizing: border-box;
+      bottom: 0;
+      width: 100%;">
 			<dd-progress></dd-progress>
 			<dd-bottom :volume="volume" @volumeChange="volumeChange"></dd-bottom>
 		</div>
@@ -198,10 +201,16 @@ export default {
 		flex-flow: column;
 		justify-content: space-between;
 		.all_page{
+      position: fixed;
+      top: 0.7rem;
+      left: 0;
+      right: 0;
+      bottom: 1.6rem;
 			flex: 1;
 			display: flex;
 			justify-content: space-between;
-			padding: .4rem;
+      padding: .4rem 0 0 .2rem;
+      box-sizing: border-box;
 			.item_page{
 				flex: 1;
 			}

@@ -61,11 +61,15 @@ export default{
 		z-index: 2;
 		background-color: @dd_bg_mode_05;
 		transition: all .2s;
+		position: fixed;
+    	box-sizing: border-box;
 	}
 	.ddtop_show{
-		height: 2rem;
-		line-height: 2rem;
-		padding: 0 .4rem;
+		width: auto;
+		height: auto;
+		display: inline-block;
+		line-height: 1rem;
+		padding: 0 0 0 .6rem;
 	}
 	.bg_bg{
 		position: absolute;

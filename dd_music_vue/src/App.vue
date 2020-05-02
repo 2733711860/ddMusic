@@ -59,7 +59,7 @@ export default {
 	#app{
 		position: relative;
 	  width: 100%;
-	  height: 100%;
+	  // height: auto;
 	  font-size: @font_size_14;
 	  color: @text_color_06;
 	}

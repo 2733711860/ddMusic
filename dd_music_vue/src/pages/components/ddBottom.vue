@@ -8,7 +8,8 @@
 				</div>
 			</div>
 			<div v-if="currentMusic.id" class="botnam">
-				{{currentMusic.singer}} - {{currentMusic.name}}<br />
+				<span class="now-song ell">{{currentMusic.singer}} - {{currentMusic.name}}</span>
+				<br />
 				<span>
 					{{ currentTime | format }}/{{ currentMusic.duration % 3600 | format }}
 				</span>
@@ -226,6 +227,10 @@ export default {
 		}
 		.botnam{
 			padding-left: .2rem;
+			.now-song{
+				    width: 2.5rem;
+    				display: inline-block;
+			}
 		}
 	}
 	.bott_pre, .bott_paly, .bott_next, .bott_mode{
