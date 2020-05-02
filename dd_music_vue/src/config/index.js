@@ -9,7 +9,7 @@ export default {
   cookieExpires: 1,
   baseUrl: {
     dev: 'http://localhost:3001',
-    pro: 'http://wap.jxlife.com.cn',
+    pro: 'http://121.41.79.10/',
     tes: 'http://tweixin.jxlife.com.cn'
   },
   messageUrl: {
