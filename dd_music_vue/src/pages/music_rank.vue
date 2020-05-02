@@ -63,6 +63,10 @@ export default {
 		height: 100%;
 		display: flex;
 		flex-flow: column;
+		width: 100%;
+		.list-page{
+			height: 65%;
+		}
 		.rank_top{
 			.rank_title{
 				padding: 0 0 .3rem;
@@ -73,6 +77,7 @@ export default {
 				/*background: @dd_bg_mask;*/
 				flex: 1;
 				box-shadow: 1px 3px 10px @dd_bg_mask;
+				height: 5.5rem;
 				span{
 					display: inline-block;
 					padding: .1rem .2rem;
