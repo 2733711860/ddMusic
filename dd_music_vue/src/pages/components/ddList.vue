@@ -21,7 +21,7 @@
             </div>
           </div>
           <div class="play_icon">
-            <img src="../../../static/img/play.png" title="播放暂停" @click="playThis(item, index)" />
+            <img src="../../../static/img/play.png" title="播放/暂停" @click="playThis(item, index)" />
             <img
               :src="likeList.filter(one => one.id==item.id).length>0 ? '../../../static/img/likeing.png' : '../../../static/img/love.png'"
               title="是否喜欢"

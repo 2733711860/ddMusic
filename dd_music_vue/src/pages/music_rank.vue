@@ -65,7 +65,7 @@ export default {
 		flex-flow: column;
 		width: 100%;
 		.list-page{
-			margin-bottom: 2.7rem;
+			// margin-bottom: 2.7rem;
 		}
 		.rank_top{
 			.rank_title{
