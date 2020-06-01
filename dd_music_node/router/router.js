@@ -11,7 +11,7 @@ function requireRouters(base_path) {
   files.forEach(file => {
     let file_name = base_path + '/' + file; // 完整文件名
     if (fs.statSync(file_name).isFile() && path.extname(file_name)==='.js') {
-      let route = '/' + file.replace(/\.js$/i, '').replace(/_/g, '/');
+      let route = '/api/' + file.replace(/\.js$/i, '').replace(/_/g, '/');
       let question = require(file_name);
       router.get(route, async (ctx) => {
         console.log(ctx.query);
