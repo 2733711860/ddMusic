@@ -8,7 +8,8 @@ app.use(koabodyparser());
 const cors = require('koa2-cors');
 app.use(cors({
   origin: function(ctx) { //设置允许来自指定域名请求
-    return 'http://localhost:8083'; //只允许http://localhost:8080这个域名的请求
+    // return 'http://localhost:8083'; //只允许http://localhost:8080这个域名的请求
+    return '*'
   },
   credentials: true, //是否允许发送Cookie
 }));

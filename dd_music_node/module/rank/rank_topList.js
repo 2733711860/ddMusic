@@ -48,7 +48,8 @@ module.exports = async (ctx, request) => {
   return new Promise(async (resolve, reject) => {
     try {
       const data = {
-        id: topList[ctx.query.idx],
+        // id: topList[ctx.query.idx],
+        id: ctx.query.idx,
         n: 10000
       };
       let results = await request(
